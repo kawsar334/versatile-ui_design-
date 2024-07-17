@@ -21,8 +21,8 @@
 :root {
     --orange: #E6533C;
     --white: white;
-    --gray:#555;
-    --borderColor:rgb(255,255,255,0.2);
+    --gray: #555;
+    --borderColor: rgb(255, 255, 255, 0.2);
     --transition: all 0.5s ease;
 
 
@@ -36,8 +36,7 @@ body {
     color: white;
     width: 100vw;
     overflow-x: hidden;
-        background-color: rgb(32 32 32)
-
+    background-color: rgb(32 32 32)
 }
 
 main {
@@ -55,7 +54,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-content: center !important;
-    
+
 
 
 }
@@ -116,7 +115,8 @@ nav>.navmiddle>ul>li>.active {
     background-color: var(--orange);
 
 }
-nav>.navmiddle>ul>li>a:hover{
+
+nav>.navmiddle>ul>li>a:hover {
     background-color: var(--orange);
 
 }
@@ -139,7 +139,7 @@ nav>.navright>.fa-bars {
 
 .intro {
     width: 100%;
-    
+
 
 }
 
@@ -172,24 +172,26 @@ nav>.navright>.fa-bars {
     text-transform: capitalize;
     color: var(--white);
 }
-br{
+
+br {
     margin: 0px;
 }
 
 .introheader>span {
     font-family: "Playwrite BE VLG", cursive;
     font-weight: 300;
-    
+
 
 }
 
 .intropara {
-    font-size:15px;
+    font-size: 15px;
     color: #555;
     width: 80%;
-    
+
 }
-.introbtnscontainer{
+
+.introbtnscontainer {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -197,6 +199,7 @@ br{
     gap: 20px;
     padding: 10px 5px;
 }
+
 .introbtn {
     padding: 10px 25px;
     border-radius: 30px;
@@ -207,18 +210,21 @@ br{
     font-size: 20px;
     text-transform: capitalize;
     text-decoration: none;
-    transition:var(--transition) ;
+    transition: var(--transition);
 
 }
-.introbtn_1{
+
+.introbtn_1 {
     background-color: var(--orange);
 }
-.introbtn_1:hover{
+
+.introbtn_1:hover {
     background-color: transparent;
     border: 1px solid var(--orange);
-    color:var(--orange);
+    color: var(--orange);
 }
-.introbtn_2:hover{
+
+.introbtn_2:hover {
     background-color: var(--borderColor);
     color: var(--white);
 }
@@ -237,21 +243,26 @@ br{
     object-fit: cover;
 
 }
-.introicon,.introitems{
+
+.introicon,
+.introitems {
     position: absolute;
     cursor: pointer;
 
 }
-.introicon{
+
+.introicon {
     left: 0;
 
 }
-.introicon>i{
+
+.introicon>i {
     font-size: 40px;
     cursor: pointer;
- 
+
 }
-.introitems{
+
+.introitems {
     padding: 20px;
     width: 200px;
     height: 100px;
@@ -260,11 +271,13 @@ br{
 
 
 }
-.intro_items_right{
+
+.intro_items_right {
     top: 100px;
     right: 0px;
 }
-.intro_items_lef{
+
+.intro_items_lef {
     bottom: 100px;
     left: -40px;
     display: flex;
@@ -272,17 +285,152 @@ br{
     align-items: center;
     gap: 20px;
 }
-.intro_items_lef>.circle{
+
+.intro_items_lef>.circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--orange);
 }
-.intro_rightheader{
+
+.intro_rightheader {
     font-size: 40px;
 }
 
 /* intro end here ============= */
 
 /* ===========================responsive section start here =================== */
+/* small devices */
+@media (max-width: 576px) {
+
+    /* nav start here  */
+    nav {
+        width: 80%;
+        height: 70px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center !important;
+    }
+    nav>.navmiddle>ul {
+        display: none;
+
+    }
+    nav>.navright {
+        display: flex;
+
+    }
+    /* nav end here  */
+        /* intro start here ============= */
+    
+        .intro {
+            width: 100%;    
+        }
+    
+        .introwrapper {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .intro>.introwrapper>.introleft {
+            width: 90%;    
+        }
+    
+        .introheader {
+            font-size: 40px;
+        }
+    
+        .introbtnscontainer {
+            gap: 10px;
+        }
+    
+        .introbtn {
+            padding: 10px 20px;
+            border-radius: 30px;        
+    
+        }
+  
+    
+        .intro>.introwrapper>.introright {
+            width: 100%;
+        }
+           
+        .introicon {
+            left: 0;
+            display: none;
+    
+        }
+        
+      
+    
+        .intro_items_right {
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+        }
+    
+        .intro_items_lef {
+            bottom: 200px;
+            left: 40px;
+            gap: 10px;
+        }    
+        /* intro end here ============= */
+
+}
+
+
+
+
+
+/******************* medium device  *********************/
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    /* nav start  */
+    nav {
+        width: 90%;
+    }
+    /* nav end  */
+    
+    
+    /* intro start here ============= */
+    .intro {
+             width: 100%;
+         }
+    
+         .introwrapper {
+             width: 100%;
+             flex-direction: column;
+             align-items: flex-start;
+         }
+    
+         .intro>.introwrapper>.introleft {
+             width: 90%;
+         }
+         .intro>.introwrapper>.introright {
+             width: 100%;
+             background-color: #555;
+         }
+    
+         .introicon {
+             display: none;
+    
+         }
+         .intro_items_right {
+             top: 20px;
+             right: 100px;
+             padding: 10px;
+         }
+    
+         .intro_items_lef {
+             bottom: 200px;
+             left: 130px;
+         }
+    
+         /* intro end here ============= */
+
+}
+
+
 /* ===========================responsive section end here =================== */
