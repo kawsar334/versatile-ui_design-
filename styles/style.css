@@ -1,0 +1,288 @@
+/* import google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  google font link for intro header  */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+
+/* background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+  background-color: rgb(32 32 32); */
+
+/* remove default margin paddin  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* variable  */
+:root {
+    --orange: #E6533C;
+    --white: white;
+    --gray:#555;
+    --borderColor:rgb(255,255,255,0.2);
+    --transition: all 0.5s ease;
+
+
+}
+
+/* change font family inside body   */
+body {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    /* background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%); */
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+        background-color: rgb(32 32 32)
+
+}
+
+main {
+    width: 100%;
+    height: max-content;
+}
+
+/* navbar start here */
+
+nav {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center !important;
+    
+
+
+}
+
+nav>.navleft>.navlogo {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--orange);
+    font-style: italic;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.navmiddle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>.navmiddle>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    height: 30px;
+    border: 1px solid var(--borderColor);
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 2px;
+
+}
+
+nav>.navmiddle>ul>li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>.navmiddle>ul>li>a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 20px !important;
+    transition: var(--transition);
+
+}
+
+nav>.navmiddle>ul>li>.active {
+    background-color: var(--orange);
+
+}
+nav>.navmiddle>ul>li>a:hover{
+    background-color: var(--orange);
+
+}
+
+
+
+nav>.navright {
+    display: none;
+
+}
+
+nav>.navright>.fa-bars {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* navbar end here ============ */
+
+/* intro start here ============= */
+
+.intro {
+    width: 100%;
+    
+
+}
+
+.introwrapper {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro>.introwrapper>.introleft {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.introheader {
+
+    font-size: 60px;
+    margin: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--white);
+}
+br{
+    margin: 0px;
+}
+
+.introheader>span {
+    font-family: "Playwrite BE VLG", cursive;
+    font-weight: 300;
+    
+
+}
+
+.intropara {
+    font-size:15px;
+    color: #555;
+    width: 80%;
+    
+}
+.introbtnscontainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 5px;
+}
+.introbtn {
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid var(--borderColor);
+    color: var(--white);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition:var(--transition) ;
+
+}
+.introbtn_1{
+    background-color: var(--orange);
+}
+.introbtn_1:hover{
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color:var(--orange);
+}
+.introbtn_2:hover{
+    background-color: var(--borderColor);
+    color: var(--white);
+}
+
+.intro>.introwrapper>.introright {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.introimg {
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+
+}
+.introicon,.introitems{
+    position: absolute;
+    cursor: pointer;
+
+}
+.introicon{
+    left: 0;
+
+}
+.introicon>i{
+    font-size: 40px;
+    cursor: pointer;
+ 
+}
+.introitems{
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--borderColor);
+
+
+}
+.intro_items_right{
+    top: 100px;
+    right: 0px;
+}
+.intro_items_lef{
+    bottom: 100px;
+    left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.intro_items_lef>.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+.intro_rightheader{
+    font-size: 40px;
+}
+
+/* intro end here ============= */
+
+/* ===========================responsive section start here =================== */
+/* ===========================responsive section end here =================== */
