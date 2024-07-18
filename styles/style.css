@@ -2,12 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*  google font link for intro header  */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 
-
-/* background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
-  background-color: rgb(32 32 32); */
 
 /* remove default margin paddin  */
 * {
@@ -176,10 +173,9 @@ br {
 }
 
 .introheader>span {
-    font-family: "Playwrite BE VLG", cursive;
-    font-weight: 300;
-
-
+    font-size: 100px;
+    font-family: 'Miama', sans-serif;
+    font-weight: 600; 
 }
 
 .intropara {
@@ -859,7 +855,7 @@ td {
 
 /* contact sectio start here ==== */
 .contact {
-    background-color: #313439;
+    /* background-color: #313439; */
     display: flex;
     justify-content: center;
     align-items: center;
