@@ -24,8 +24,6 @@
     --gray: #555;
     --borderColor: rgb(255, 255, 255, 0.2);
     --transition: all 0.5s ease;
-
-
 }
 
 /* change font family inside body   */
@@ -387,12 +385,13 @@ br {
 /* habit end here============= */
 
 /* run start here/sliider */
-.run{
+.run {
     width: 100%;
     background-color: black;
 
 }
-.runwrapper{
+
+.runwrapper {
     width: 80%;
     background-color: #555;
     display: flex;
@@ -403,10 +402,11 @@ br {
     height: 300px;
     border-radius: 20px;
     padding: 20px;
-    
+
 
 }
-.runleft{
+
+.runleft {
     width: 45%;
     height: 100%;
     display: flex;
@@ -415,19 +415,22 @@ br {
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
-    
+
 
 }
-.runleft>h1{
+
+.runleft>h1 {
     font-size: 50px;
     text-transform: capitalize;
 
 }
-.runleft>p{
+
+.runleft>p {
     text-transform: capitalize;
 }
-.runleft>button{
-    padding: 10px 30px ;
+
+.runleft>button {
+    padding: 10px 30px;
     border: 1px solid var(--borderColor);
     background-color: var(--orange);
     border-radius: 30px;
@@ -435,15 +438,17 @@ br {
     color: var(--white);
     cursor: pointer;
     margin-top: 20px;
-    transition:var(--transition);
+    transition: var(--transition);
 
 }
-.runleft>button:hover{
+
+.runleft>button:hover {
     background-color: transparent;
     border: 1px solid var(--orange);
     color: var(--orange);
 }
-.runright{
+
+.runright {
     width: 40%;
     height: 100%;
     display: flex;
@@ -454,10 +459,11 @@ br {
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-    
-    
+
+
 }
-.runimg{
+
+.runimg {
     border-radius: 20px;
     width: 90%;
     height: 100%;
@@ -465,7 +471,578 @@ br {
     cursor: pointer;
     display: none;
 }
+
 /* run end here  */
+
+/* exercise section start here ******* */
+.exercise {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex_wrapper {
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.ex_top {
+    width: 70%;
+    text-transform: capitalize;
+}
+
+.ex_top>h1 {
+    font-size: 50px;
+}
+
+.ex_top>p {
+    width: 80%;
+    font-size: 16px;
+}
+
+.ex_bottom {
+    width: 100%;
+}
+
+.exitems {
+    width: 100%;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.exitem {
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+    cursor: pointer;
+}
+
+.exitem_lg {
+    width: 50% !important;
+}
+
+.exitem:hover .ex_img {
+    transform: scale(1.5);
+
+}
+
+.exitem:hover .ex_contents {
+    background-color: transparent;
+}
+
+
+.ex_img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+    object-fit: cover;
+}
+
+.ex_contents {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item_1,
+.item_3,
+.item_5,
+.item_6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    padding: 20px;
+
+}
+
+.item_1 {
+    background: rgba(6, 255, 210, 0.5);
+    color: black;
+
+}
+
+.item_2 {
+    background: rgba(255, 0, 0, 0.3);
+    padding-left: 50px;
+}
+
+.item_3 {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.item_4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.item_5 {
+    background: rgba(66, 255, 0, 0.3);
+}
+
+.item_6 {
+    background: rgba(0, 71, 255, 0.3);
+}
+
+/* exercise section end here********/
+
+/* bmi section start here ========== */
+
+.bmi {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bmitop {
+    margin: 40px 0px;
+    width: 50%;
+
+}
+
+.bmiheader {
+    font-size: 50px;
+}
+
+.bmipara {
+    font-size: 14px;
+    color: var(--borderColor);
+    width: 70%;
+}
+
+.bmibottom {
+    background-color: rgb(34 34 34);
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.bmileft {
+    width: 40%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid var(--borderColor);
+    padding: 8px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+th {
+    background-color: transparent;
+}
+
+td {
+    color: var(--borderColor);
+}
+
+.bmiright {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bmiform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bmiformitem {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input_mini {
+    width: 48%;
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55 55 55);
+    color: var(--white);
+}
+
+.factor_item {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    outline: none;
+    border: 1px solid var(--borderColor);
+    background-color: rgb(55 55 55);
+    border-radius: 10px;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.gender {
+    width: 48%;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: rgb(55 55 55);
+    border-radius: 5px;
+    border: none;
+    /* border: 1px solid var(--borderColor); */
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.bmibtn {
+    border: 1px solid var(--borderColor);
+    color: white;
+    background-color: var(--orange);
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+/* bmi section end here ============== */
+
+/* team start here*********** */
+.team {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamwrapper {
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.teamtop {
+    width: 80%;
+    text-align: center;
+}
+
+.team_header {
+    text-align: center;
+}
+
+.team_para {
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+    color: var(--gray);
+}
+
+.teambottom {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(25 25 25);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.taeamitem {
+    width: 280px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.taeamitem:hover .teamcontents {
+    display: none;
+}
+
+
+.taeamitem:hover .teamimg {
+    transform: scale(1.5);
+}
+
+
+.teamcontents {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.teamcontents>p {
+    color: var(--gray);
+}
+
+.teamimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+/* team end here ============= */
+
+/* contact sectio start here ==== */
+.contact {
+    background-color: #313439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.contacttop {}
+
+.contact_header {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.contact_para {
+    font-size: 14px;
+    color: var(--borderColor);
+    text-transform: capitalize;
+}
+
+.contactform {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.contactitem {
+    width: 100%;
+    height: max-content;
+}
+
+.contact_input {
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--orange);
+    outline: none;
+    color: var(--orange);
+
+}
+
+.messge_input {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--orange);
+    outline: none;
+    color: var(--orange);
+}
+
+.contact_btn {
+    border: 1px solid var(--borderColor);
+    background-color: var(--orange);
+    padding: 5px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--white);
+    transition: var(--transition);
+}
+.contact_btn:hover{
+    background-color: transparent;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+/* contact section end here===== */
+
+/* footer start here ========= */
+.footer {
+    width: 100%;
+    background-color: rgb(25 25 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerwrapper {
+
+    width: 80%;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.footertop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--borderColor);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footerleft {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footerlogo {
+    font-size: 50px;
+    color: var(--orange);
+    font-style: italic;
+}
+
+.footer_para {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.footerright {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.footerheader {
+    font-size: 30px;
+
+}
+
+.footerlist {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerlist>li {
+    margin: 5px 0px;
+}
+
+.footerlist>li>a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    transition: var(--transition);
+    font-size: 20px;
+}
+
+.footerlist>li>a:hover {
+    background-color: var(--borderColor);
+    color: var(--orange);
+}
+
+.footerbottom {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.footerbottom>p {
+    font-size: 20px;
+}
+
+/* footer end here ========= */
+
+
 
 /* ===========================responsive section start here =================== */
 /* small devices */
@@ -567,67 +1144,275 @@ br {
     .habit_top_para {
         width: 90%;
         font-size: 14px;
-      
+
     }
 
     .habititems {
-       flex-direction: column;
+        flex-direction: column;
     }
+
     /* habit end here============= */
-        /* run start here/sliider */
-      
-    
-        .runwrapper {
-            width: 90%;
-            height: max-content;
-            flex-direction: column;
-    
-    
+    /* run start here/sliider */
+
+
+    .runwrapper {
+        width: 90%;
+        height: max-content;
+        flex-direction: column;
+
+
+    }
+
+    .runleft {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .runleft>h1 {
+        font-size: 30px;
+
+    }
+
+
+
+    .runleft>button {
+        padding: 10px;
+        width: 100%;
+
+    }
+
+
+
+    .runright {
+        width: 100%;
+        height: 300px;
+    }
+
+    .runimg {
+        border-radius: 20px;
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* run end here  */
+    /* exercise section start here ******* */
+    .exercise {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ex_wrapper {
+        width: 90%;
+    }
+
+    .ex_top {
+        width: 90%;
+    }
+
+    .ex_top>h1 {
+        font-size: 40px;
+    }
+
+    .ex_bottom {
+        width: 90%;
+    }
+
+    .exitems {
+        width: 100%;
+
+    }
+
+    .exitem {
+        width: 50%;
+        height: 170px;
+
+    }
+
+    .ex_contents {
+        padding: 20px;
+        text-transform: capitalize;
+    }
+
+    /* exercise section end here********/
+    /* bmi section start here ========== */
+
+    .bmi {
+        background-color: black;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bmitop {
+        width: 90%;
+
+    }
+
+    .bmiheader {
+        font-size: 30px;
+    }
+
+
+    .bmibottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .bmileft {
+        width: 100%;
+        /* background-color: gray; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+
+    .bmiright {
+        width: 90%;
+    }
+
+    /* bmi section end here ============== */
+    /* team start here*********** */
+    .team {}
+
+    .teamwrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .teamtop {
+        width: 100%;
+    }
+
+    .team_header {
+        text-align: center;
+    }
+
+    .team_para {
+        width: 90%;
+
+    }
+
+    .teambottom {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .taeamitem {
+        width: 95%;
+        height: 250px;
+    }
+
+    /* team **************end here-======= */
+        /* contact sectio start here ==== */
+        .contact {
+
         }
     
-        .runleft {
-            width: 100%;
-            height: 100%;   
+        .contacttop {}
     
-        }
-    
-        .runleft>h1 {
+        .contact_header {
             font-size: 30px;
-    
-        }
-    
-      
-    
-        .runleft>button {
-            padding: 10px;
-            width: 100%;
-    
-        }
-    
    
-    
-        .runright {
-            width: 100%;
-            height: 300px;
         }
     
-        .runimg {
-            border-radius: 20px;
+        .contactform {
             width: 90%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            display: none;
         }
     
-        /* run end here  */
+        /* contact section end here===== */
+    /* footer start here ========= */
+    .footer {
+        width: 100%;
+        background-color: rgb(25 25 25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerwrapper {
+        width: 90%;
+    }
+
+    .footertop {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footerleft {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footerlogo {
+        font-size: 50px;
+        color: var(--orange);
+        font-style: italic;
+    }
+
+    .footer_para {}
+
+    .footerright {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .footerheader {
+        font-size: 20px;
+    }
+
+    .footerlist {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        ;
+    }
+
+    .footerlist>li {
+        margin: 0px;
+    }
+
+    .footerlist>li>a {
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .footerlist>li>a:hover {
+        padding: 5px 20px;
+    }
+
+    .footerbottom {
+        text-align: left;
+    }
 
 }
 
-
-
-
-
+/* footer end here */
 /******************* medium device  *********************/
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -677,59 +1462,214 @@ br {
     }
 
     /* intro end here ============= */
-        /* habit start here =============== */    
-        .habitwrapper {
-            width: 90%;    
-        }
-    
-        .habittop {
-            width: 90%;
-        }
-        .habit_top_para {
-            width: 80%;
-        }
-    
-        .habititems {
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 5px;
-        }
-    
-        .habititem {
-            width: 47%;
-        }
-        /* habit end here************* */
+    /* habit start here =============== */
+    .habitwrapper {
+        width: 90%;
+    }
 
-        /* run start here  */
-                .runwrapper {
-                 
-                    padding: 20px;
-                    height: max-content;
-        
-                }
-        
-                .runleft {
-                    width: 100%;
-                    height: 100%;
-        
-                }
-        
-                .runleft>h1 {
-                    font-size: 30px !important;
-        
-                }
+    .habittop {
+        width: 90%;
+    }
 
-        
-        
-        
-                .runright {
-                    width: 100%;
-                    height: 400px;
-                }
-        
-            
-        
-        /* run end here */
+    .habit_top_para {
+        width: 80%;
+    }
+
+    .habititems {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .habititem {
+        width: 47%;
+    }
+
+    /* habit end here************* */
+
+    /* run start here  */
+    .runwrapper {
+
+        padding: 20px;
+        height: max-content;
+
+    }
+
+    .runleft {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .runleft>h1 {
+        font-size: 30px !important;
+
+    }
+
+    .runright {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* run end here */
+    /* exercise section start here ******* */
+
+
+    .ex_wrapper {
+        width: 90%;
+    }
+
+    .ex_top {
+        width: 100%;
+    }
+
+    .ex_top>h1 {
+        font-size: 40px;
+    }
+
+    .ex_top>p {
+        width: 80%;
+    }
+
+    .exitem {
+        width: 25%;
+        height: 170px;
+    }
+
+    /* exercise section end here********/
+    /* bmi section start here ========== */
+
+    .bmi {
+        background-color: black;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bmitop {
+        width: 90%;
+
+    }
+
+    .bmileft {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .bmibottom {
+        flex-direction: column;
+        align-items: flex-start;
+
+
+    }
+
+
+    table {
+        width: 90%;
+    }
+
+
+    .bmiright {
+        width: 100%;
+    }
+
+    .bmiform {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* bmi section end here ============== */
+    /* team start here*********** */
+    .team {}
+
+    .teamwrapper {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .teamtop {
+        width: 80%;
+    }
+
+    .team_header {
+        text-align: center;
+    }
+
+    .team_para {
+        width: 90%;
+
+    }
+
+    .teambottom {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .taeamitem {
+        width: 30%;
+        height: 250px;
+    }
+
+
+    /* team **************end here-======= */
+        /* contact sectio start here ==== */
+        .contact {
+
+
+        }
+    
+        .contacttop {}
+    
+        .contact_header {
+            font-size: 30px;
+   
+        }
+    
+        .contactform {
+            width: 70%;
+        }
+    
+        /* contact section end here===== */
+
+    /* footer start here ========= */
+    .footer {
+        width: 100%;
+        background-color: rgb(25 25 25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerwrapper {
+        width: 100%;
+    }
+
+    .footertop {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footerleft {
+        width: 90%;
+    }
+
+    .footerright {
+        width: 48%;
+        align-items: flex-start;
+    }
+
+    .footerheader {
+        font-size: 30px;
+    }
+
+    /* footer end here */
 
 }
 
