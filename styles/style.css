@@ -31,7 +31,7 @@ body {
     color: white;
     width: 100vw;
     overflow-x: hidden;
-    background-color: rgb(32 32 32)
+    background-color: rgb(32 32 32);
 }
 
 main {
@@ -42,19 +42,27 @@ main {
 /* navbar start here */
 
 nav {
-    width: 80%;
+    width: 100%;
     height: 70px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center !important;
-
-
-
+    position: sticky !important;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(32 32 32);
+        z-index: 100;
+ 
+}
+.navwrapper{
+    width: 80%;
+    height: 100%;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center !important;
+      
 }
 
-nav>.navleft>.navlogo {
+nav>.navwrapper>.navleft>.navlogo {
     font-size: 30px;
     text-decoration: none;
     color: var(--orange);
@@ -71,7 +79,7 @@ nav>.navleft>.navlogo {
     align-items: center;
 }
 
-nav>.navmiddle>ul {
+nav>.navwrapper>.navmiddle>ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,14 +93,14 @@ nav>.navmiddle>ul {
 
 }
 
-nav>.navmiddle>ul>li {
+nav>.navwrapper>.navmiddle>ul>li {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav>.navmiddle>ul>li>a {
+nav>.navwrapper>.navmiddle>ul>li>a {
     text-decoration: none;
     color: var(--white);
     cursor: pointer;
@@ -103,27 +111,27 @@ nav>.navmiddle>ul>li>a {
     padding: 0px 10px;
     border-radius: 20px !important;
     transition: var(--transition);
-
+    text-transform: capitalize;
 }
 
-nav>.navmiddle>ul>li>.active {
+nav>.navwrapper>.navmiddle>ul>li>.active {
     background-color: var(--orange);
 
 }
 
-nav>.navmiddle>ul>li>a:hover {
+nav>.navwrapper>.navmiddle>ul>li>a:hover {
     background-color: var(--orange);
 
 }
 
 
 
-nav>.navright {
+nav>.navwrapper>.navright {
     display: none;
 
 }
 
-nav>.navright>.fa-bars {
+nav>.navwrapper>.navright>.fa-bars {
     font-size: 30px;
     cursor: pointer;
 }
@@ -175,7 +183,7 @@ br {
 .introheader>span {
     font-size: 100px;
     font-family: 'Miama', sans-serif;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .intropara {
@@ -681,6 +689,7 @@ td {
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .bmiform {
@@ -696,7 +705,6 @@ td {
     width: 80%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .input_mini {
@@ -902,9 +910,10 @@ td {
     padding: 20px;
     border-radius: 5px;
     border: none;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--borderColor);
     outline: none;
-    color: var(--orange);
+    background-color: black;
+    color: var(--white);
 
 }
 
@@ -914,9 +923,10 @@ td {
     padding: 20px;
     border-radius: 5px;
     border: none;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--borderColor);
     outline: none;
-    color: var(--orange);
+    color: var(--white);
+    background-color: black;
 }
 
 .contact_btn {
@@ -929,7 +939,8 @@ td {
     color: var(--white);
     transition: var(--transition);
 }
-.contact_btn:hover{
+
+.contact_btn:hover {
     background-color: transparent;
     color: var(--orange);
     border: 1px solid var(--orange);
@@ -1045,23 +1056,25 @@ td {
 @media (max-width: 576px) {
 
     /* nav start here  */
-    nav {
-        width: 80%;
+    nav>.navwrapper {
+        width: 90%;
         height: 70px;
         margin: 0 auto;
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-content: center !important;
+
     }
 
-    nav>.navmiddle>ul {
+    nav>.navwrapper>.navmiddle>ul {
         display: none;
 
     }
 
-    nav>.navright {
+    nav>.navwrapper>.navright {
         display: flex;
+        align-items: center;
 
     }
 
@@ -1090,14 +1103,17 @@ td {
     }
 
     .introbtn {
-        padding: 10px 20px;
+        padding: 10px 30px;
         border-radius: 30px;
+        font-size: 14px;
+
 
     }
 
 
     .intro>.introwrapper>.introright {
         width: 100%;
+        background-color: black;
     }
 
     .introicon {
@@ -1281,7 +1297,15 @@ td {
 
 
     .bmiright {
-        width: 90%;
+        width: 100%;
+    }
+
+    .bmiformitem {
+        width: 100%;
+    }
+
+    .factor_item {
+        width: 100%;
     }
 
     /* bmi section end here ============== */
@@ -1318,23 +1342,21 @@ td {
     }
 
     /* team **************end here-======= */
-        /* contact sectio start here ==== */
-        .contact {
+    /* contact sectio start here ==== */
+    .contact {}
 
-        }
-    
-        .contacttop {}
-    
-        .contact_header {
-            font-size: 30px;
-   
-        }
-    
-        .contactform {
-            width: 90%;
-        }
-    
-        /* contact section end here===== */
+    .contacttop {}
+
+    .contact_header {
+        font-size: 30px;
+
+    }
+
+    .contactform {
+        width: 90%;
+    }
+
+    /* contact section end here===== */
     /* footer start here ========= */
     .footer {
         width: 100%;
@@ -1414,7 +1436,7 @@ td {
 @media screen and (min-width:577px) and (max-width:992px) {
 
     /* nav start  */
-    nav {
+    nav >.navwrapper{
         width: 90%;
     }
 
@@ -1438,7 +1460,7 @@ td {
 
     .intro>.introwrapper>.introright {
         width: 100%;
-        background-color: #555;
+        background-color: black;
     }
 
     .introicon {
@@ -1615,24 +1637,21 @@ td {
 
 
     /* team **************end here-======= */
-        /* contact sectio start here ==== */
-        .contact {
+    /* contact sectio start here ==== */
+    .contact {}
 
+    .contacttop {}
 
-        }
-    
-        .contacttop {}
-    
-        .contact_header {
-            font-size: 30px;
-   
-        }
-    
-        .contactform {
-            width: 70%;
-        }
-    
-        /* contact section end here===== */
+    .contact_header {
+        font-size: 30px;
+
+    }
+
+    .contactform {
+        width: 70%;
+    }
+
+    /* contact section end here===== */
 
     /* footer start here ========= */
     .footer {
@@ -1656,9 +1675,15 @@ td {
         width: 90%;
     }
 
-    .footerright {
-        width: 48%;
-        align-items: flex-start;
+
+
+    .footerright>ul>li>a {
+        padding-left: 5px;
+        margin: 0px;
+    }
+
+    .footerright>ul>li>a:hover {
+        background-color: transparent;
     }
 
     .footerheader {
