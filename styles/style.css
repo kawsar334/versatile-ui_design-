@@ -6,7 +6,7 @@
 
 
 
-/* remove default margin paddin  */
+/* remove default margin padding  */
 * {
     margin: 0;
     padding: 0;
@@ -45,21 +45,22 @@ nav {
     width: 100%;
     height: 70px;
     position: sticky !important;
-        top: 0px;
-        left: 0px;
-        background-color: rgb(32 32 32);
-        z-index: 100;
- 
+    top: 0px;
+    left: 0px;
+    background-color: rgb(32 32 32);
+    z-index: 100;
+
 }
-.navwrapper{
+
+.navwrapper {
     width: 80%;
     height: 100%;
-        margin: 0 auto;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-content: center !important;
-      
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center !important;
+
 }
 
 nav>.navwrapper>.navleft>.navlogo {
@@ -463,18 +464,11 @@ br {
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    overflow: hidden;
 
 
 }
 
-.runimg {
-    border-radius: 20px;
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    display: none;
-}
 
 /* run end here  */
 
@@ -759,7 +753,8 @@ td {
     transition: var(--transition);
     text-transform: capitalize;
 }
-.bmibtn:hover{
+
+.bmibtn:hover {
     background-color: transparent;
 
 }
@@ -951,12 +946,13 @@ td {
     border: 1px solid var(--orange);
 }
 
-.contactsocialinks{
+.contactsocialinks {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contactsocialinks>ul{
+
+.contactsocialinks>ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -965,7 +961,8 @@ td {
     flex-wrap: wrap;
 
 }
-.contactsocialinks>ul>li>a{
+
+.contactsocialinks>ul>li>a {
     text-decoration: none;
     color: gray;
     font-size: 20px;
@@ -973,12 +970,13 @@ td {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--borderColor) ;
+    border: 1px solid var(--borderColor);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contactsocialinks>ul>li>a:hover{
+
+.contactsocialinks>ul>li>a:hover {
     color: white;
     background-color: var(--orange);
 }
@@ -1140,7 +1138,7 @@ td {
     }
 
     .introbtn {
-        padding: 10px ;
+        padding: 10px;
         border-radius: 30px;
         font-size: 14px;
 
@@ -1473,7 +1471,7 @@ td {
 @media screen and (min-width:577px) and (max-width:992px) {
 
     /* nav start  */
-    nav >.navwrapper{
+    nav>.navwrapper {
         width: 90%;
     }
 
