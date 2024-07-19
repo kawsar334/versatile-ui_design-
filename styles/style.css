@@ -743,7 +743,6 @@ td {
     background-color: rgb(55 55 55);
     border-radius: 5px;
     border: none;
-    /* border: 1px solid var(--borderColor); */
     color: var(--white);
     text-transform: capitalize;
 }
@@ -757,6 +756,12 @@ td {
     border-radius: 30px;
     margin: 10px 0px;
     cursor: pointer;
+    transition: var(--transition);
+    text-transform: capitalize;
+}
+.bmibtn:hover{
+    background-color: transparent;
+
 }
 
 /* bmi section end here ============== */
@@ -946,6 +951,38 @@ td {
     border: 1px solid var(--orange);
 }
 
+.contactsocialinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactsocialinks>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.contactsocialinks>ul>li>a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    transition: var(--transition);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--borderColor) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactsocialinks>ul>li>a:hover{
+    color: white;
+    background-color: var(--orange);
+}
+
 /* contact section end here===== */
 
 /* footer start here ========= */
@@ -1103,7 +1140,7 @@ td {
     }
 
     .introbtn {
-        padding: 10px 30px;
+        padding: 10px ;
         border-radius: 30px;
         font-size: 14px;
 
