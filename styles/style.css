@@ -1004,9 +1004,12 @@ td {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid var(--borderColor);
+    /* border-bottom: 1px solid var(--borderColor); */
     padding-bottom: 10px;
     margin-bottom: 20px;
+}
+.footerhr{
+    border: 0.1px solid rgb(255,255,255,0.1);
 }
 
 .footerleft {
