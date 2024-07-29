@@ -64,7 +64,7 @@ nav {
 }
 
 nav>.navwrapper>.navleft>.navlogo {
-    font-size: 30px;
+    font-size: 50px;
     text-decoration: none;
     color: var(--orange);
     font-style: italic;
@@ -175,6 +175,7 @@ nav>.navwrapper>.navright>.fa-bars {
     font-weight: 900;
     text-transform: capitalize;
     color: var(--white);
+    text-align: left;
 }
 
 br {
@@ -185,6 +186,9 @@ br {
     font-size: 100px;
     font-family: 'Miama', sans-serif;
     font-weight: 600;
+    margin-left: -10px;
+    padding: 0px;
+
 }
 
 .intropara {
@@ -287,6 +291,7 @@ br {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .intro_items_lef>.circle {
@@ -294,6 +299,9 @@ br {
     height: 40px;
     border-radius: 50%;
     background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro_rightheader {
@@ -465,8 +473,6 @@ br {
     background-size: cover;
     border-radius: 20px;
     overflow: hidden;
-
-
 }
 
 
@@ -1008,8 +1014,9 @@ td {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.footerhr{
-    border: 0.1px solid rgb(255,255,255,0.1);
+
+.footerhr {
+    border: 0.1px solid rgb(255, 255, 255, 0.1);
 }
 
 .footerleft {
@@ -1022,7 +1029,7 @@ td {
 }
 
 .footerlogo {
-    font-size: 50px;
+    font-size: 70px;
     color: var(--orange);
     font-style: italic;
 }
@@ -1031,6 +1038,8 @@ td {
     width: 100%;
     text-align: left;
     font-size: 16px;
+    color: #555;
+    line-height: 25px;
 }
 
 .footerright {
@@ -1063,7 +1072,7 @@ td {
 .footerlist>li>a {
     text-decoration: none;
     padding: 5px 20px;
-    color: white;
+    color: #555;
     text-transform: capitalize;
     border-radius: 20px;
     transition: var(--transition);
@@ -1083,6 +1092,7 @@ td {
 
 .footerbottom>p {
     font-size: 20px;
+    color: #555;
 }
 
 /* footer end here ========= */
@@ -1134,18 +1144,27 @@ td {
 
     .introheader {
         font-size: 40px;
+        margin-left: 0px;
     }
+
+    .introheader>span {
+        font-size: 80px;
+
+    }
+
 
     .introbtnscontainer {
         gap: 10px;
     }
 
     .introbtn {
-        padding: 10px;
-        border-radius: 30px;
-        font-size: 14px;
+        font-size: 16px;
 
 
+    }
+
+    .joinbtn_span {
+        display: none;
     }
 
 
@@ -1166,12 +1185,25 @@ td {
         top: 20px;
         right: 20px;
         padding: 10px;
+        width: 150px;
+        height: 80px;
+    }
+
+
+    .introrightpara {
+        font-size: 12px;
+    }
+
+    .intro_rightheader {
+        font-size: 25px;
     }
 
     .intro_items_lef {
-        bottom: 200px;
-        left: 40px;
+        bottom: 220px;
+        left: 25px;
         gap: 10px;
+        width: 170px;
+        height: 80px;
     }
 
     /* intro end here ============= */
@@ -1236,7 +1268,7 @@ td {
 
     .runright {
         width: 100%;
-        height: 300px;
+        height: 180px;
     }
 
     .runimg {
@@ -1268,11 +1300,16 @@ td {
     .ex_top>h1 {
         font-size: 40px;
     }
-
-    .ex_bottom {
-        width: 90%;
+    .ex_top>p {
+        width: 100%;
+        line-height: 25px;
     }
-
+    
+    .ex_bottom {
+        width: 100%;
+     
+    }
+    
     .exitems {
         width: 100%;
 
@@ -1310,10 +1347,12 @@ td {
 
     .bmiheader {
         font-size: 30px;
+        text-align: left;
     }
 
 
     .bmibottom {
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
 
@@ -1321,16 +1360,18 @@ td {
 
     .bmileft {
         width: 100%;
-        /* background-color: gray; */
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
-        gap: 30px;
+        gap: 0px;
+        padding: 0px;
     }
 
+    .bmileft>h2 {}
+
     table {
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -1405,7 +1446,9 @@ td {
     }
 
     .footerwrapper {
-        width: 90%;
+        width: 95%;
+        /* background-color: red; */
+        padding: 0;
     }
 
     .footertop {
@@ -1415,21 +1458,26 @@ td {
     }
 
     .footerleft {
-        width: 90%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 10px;
+        padding: 20px;
     }
 
     .footerlogo {
-        font-size: 50px;
+        font-size: 70px;
         color: var(--orange);
         font-style: italic;
     }
 
-    .footer_para {}
+    .footer_para {
+        color: #555;
+        line-height: 25px;
+        font-size: 14px;
+    }
 
     .footerright {
         width: 100%;
@@ -1456,6 +1504,7 @@ td {
     .footerlist>li>a {
         padding: 0px;
         font-size: 20px;
+        color: #555;
     }
 
     .footerlist>li>a:hover {
