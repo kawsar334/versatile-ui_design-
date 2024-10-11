@@ -22,15 +22,16 @@
                 <div class="navleft">
                     <a href="#intro" class="navlogo">Fitness</a>
                 </div>
-                <div class="navmiddle">
-                    <ul>
+                <div class="navmiddle" >
+                    <ul id="menuList">
                         <li><a href="#intro" class="active">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#about">about</a></li>
                 </div>
-                <div class="navright">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="navright" >
+                    <i class="fa-solid fa-bars" id="menu_bar"></i>
+
                 </div>
             </div>
         </nav>
@@ -422,6 +423,17 @@
         </footer>
         <!-- footer end here  -->
     </main>
+
+    <script>
+        const menuList= document.getElementById("menuList");
+        const menu_bar = document.getElementById("menu_bar");
+
+        menu_bar.addEventListener("click", () => {
+            menuList.style.display= menuList.style.display === "flex"? "none" : "flex"
+            console.log(menuList);
+        });
+
+    </script>
 </body>
 
 </html>
